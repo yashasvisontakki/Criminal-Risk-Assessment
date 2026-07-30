@@ -13,22 +13,6 @@
 A responsive web implementation of the <b>Criminal Risk Assessment Request</b> form recreated from the original PDF with an identical layout, responsive design, print support, and client-side validation.
 </p>
 
----
-
-# 📑 Table of Contents
-
-- Overview
-- Live Demo
-- Screenshots
-- Features
-- Technologies Used
-- Project Structure
-- How to Run
-- Functionalities
-- Data Handling
-- Learning Outcomes
-- Future Improvements
-- Author
 
 ---
 
