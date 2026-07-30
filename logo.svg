@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" width="220" height="70">
+  <!-- Simple bison silhouette -->
+  <g transform="translate(5,8)">
+    <path d="M10,35 C8,28 12,22 18,20 C16,15 20,10 26,11 C28,7 34,5 38,8 
+             C44,4 52,6 54,12 C60,10 66,14 65,20 C70,21 72,27 68,31 
+             C70,36 66,41 60,40 C58,45 52,47 47,44 
+             C44,48 37,49 33,45 C28,48 21,46 19,41 
+             C13,42 8,39 10,35 Z" fill="#4C7C2E"/>
+    <circle cx="24" cy="24" r="1.6" fill="#ffffff"/>
+    <path d="M17,19 C14,15 14,10 18,7" stroke="#4C7C2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M27,10 C29,6 33,4 37,6" stroke="#4C7C2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M60,25 L67,23" stroke="#4C7C2E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="55" y="55" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="bold" fill="#4C7C2E">Manitoba</text>
+  <text x="55" y="66" font-family="Arial, sans-serif" font-size="10" fill="#333333">Families</text>
+</svg>

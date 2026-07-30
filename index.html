@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Criminal Risk Assessment Request</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="statusMsg"></div>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="page" id="page1">
+
+  <div class="form-header">
+    <div class="logo-block">
+      <img src="assets/logo-official.png" alt="Manitoba Families logo">
+    </div>
+    <div class="form-title">Criminal Risk Assessment<br>Request</div>
+  </div>
+
+  <div class="unit-block">
+    MANITOBA FAMILIES - CRIMINAL RISK ASSESSMENT UNIT<br>
+    Child Protection Branch<br>
+    201 - 114 Garry Street<br>
+    Winnipeg, Manitoba R3C 4V5
+  </div>
+
+  <div class="consent-box">
+    <div class="consent-title">CONSENT FOR CRIMINAL RISK ASSESSMENT AND RELEASE OF INFORMATION</div>
+    <div class="consent-text">
+      As a person who has, or may have, care, custody, control or charge of a child in receipt of services under <i>The Child and Family Services
+      Act,</i> I authorize the Criminal Risk Assessment Unit of Manitoba Families&rsquo; Child Protection Branch ("CRAU") to conduct enquiries of the
+      Winnipeg Police Service (WPS), the RCMP and other law enforcement agencies necessary to assess the risk that I may endanger the
+      life, health or emotional wellbeing of a child. I understand that this information is requested by (CFS Agency) for the purposes of, and
+      in accordance with, s. 18.4(1.1) of <i>The Child and Family Services Act,</i> and may include a criminal record, criminal and Provincial Act
+      convictions, orders or charges, other involvement/contact with law enforcement (including non-conviction information) or other
+      information. I authorize the disclosure of said information to CRAU and an authorized Child and Family Services Agency designate or
+      designates. I also authorize the disclosure of the personal identifying information set out below to CRAU, the WPS, RCMP and other
+      law enforcement agencies for the purpose of completing a Criminal Risk Assessment. I understand that the results of this Criminal Risk
+      Assessment are confidential, and may not be provided to me, but may be disclosed in accordance with s.76 of the <i>Child and Family
+      Services Act.</i>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group">
+        <label for="consentDate">Date:</label>
+        <input type="date" id="consentDate" class="underline-input" data-field="consentDate">
+      </div>
+      <div class="field-group grow">
+        <label for="signature">Signature of person being assessed:</label>
+        <input type="text" id="signature" class="underline-input" data-field="signature">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="checkbox-row">
+        <input type="checkbox" id="unconsented" data-field="unconsented">
+        <label for="unconsented">Unconsented</label>
+      </div>
+      <div class="field-group grow">
+        <label for="witness">Witness (if consenting):</label>
+        <input type="text" id="witness" class="underline-input" data-field="witness">
+      </div>
+    </div>
+  </div>
+
+  <div class="print-clearly">PLEASE PRINT CLEARLY</div>
+
+  <div class="numbered-fields">
+    <div class="field-row">
+      <div class="field-group">
+        <label for="firstName">1. FIRST NAME:</label>
+        <input type="text" id="firstName" class="underline-input" data-field="firstName">
+      </div>
+      <div class="field-group">
+        <label for="secondName">2. SECOND NAME:</label>
+        <input type="text" id="secondName" class="underline-input" data-field="secondName">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label for="lastName">3. LAST NAME:</label>
+        <input type="text" id="lastName" class="underline-input" data-field="lastName">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label>4. DATE OF BIRTH:</label>
+        <div class="dob-row">
+          <div class="dob-part">
+            <input type="text" maxlength="2" id="dobDay" data-field="dobDay" placeholder="">
+            <span>Day</span>
+          </div>
+          <div class="dob-part">
+            <input type="text" maxlength="2" id="dobMonth" data-field="dobMonth" placeholder="">
+            <span>Month</span>
+          </div>
+          <div class="dob-part">
+            <input type="text" maxlength="4" id="dobYear" data-field="dobYear" placeholder="">
+            <span>Year</span>
+          </div>
+        </div>
+      </div>
+      <div class="field-group">
+        <label>5.</label>
+        <div class="checkbox-row">
+          <input type="radio" name="gender" id="genderMale" value="Male" data-field="gender">
+          <label for="genderMale">MALE</label>
+        </div>
+        <div class="checkbox-row">
+          <input type="radio" name="gender" id="genderFemale" value="Female" data-field="gender">
+          <label for="genderFemale">FEMALE</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label for="otherLastNames">6. OTHER LAST NAMES USED:</label>
+        <input type="text" id="otherLastNames" class="underline-input" data-field="otherLastNames">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label for="otherFirstNames">7. OTHER FIRST NAMES USED/ALSO GOES BY:</label>
+        <input type="text" id="otherFirstNames" class="underline-input" data-field="otherFirstNames">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label for="currentAddress">8. CURRENT ADDRESS (include postal code):</label>
+        <input type="text" id="currentAddress" class="underline-input" data-field="currentAddress">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label for="currentPhone">9. CURRENT PH#s:</label>
+        <input type="text" id="currentPhone" class="underline-input" data-field="currentPhone">
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group grow">
+        <label for="birthPlace">10. City/Province or Country of Birth:</label>
+        <input type="text" id="birthPlace" class="underline-input" data-field="birthPlace">
+      </div>
+    </div>
+  </div>
+
+  <div class="id-notice">*PLEASE NOTE: Subject's name must be identified with TWO PIECES OF IDENTIFICATION (MB D/L &amp; photo ID is preferable):</div>
+
+  <div class="id-checklist">
+    <div class="checkbox-row">
+      <input type="checkbox" id="idBirthCert" data-field="idBirthCert">
+      <label for="idBirthCert">Birth Certificate</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="idSIN" data-field="idSIN">
+      <label for="idSIN">Social Insurance Card</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="idHealthCard" data-field="idHealthCard">
+      <label for="idHealthCard">Manitoba Health Card</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="idTreatyCard" data-field="idTreatyCard">
+      <label for="idTreatyCard">Treaty Card</label>
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="checkbox-row">
+      <input type="checkbox" id="idOtherCheck" data-field="idOtherCheck">
+      <label for="idOtherCheck">Other (specify ID):</label>
+    </div>
+    <div class="field-group grow">
+      <input type="text" id="idOtherSpecify" class="underline-input" data-field="idOtherSpecify">
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="checkbox-row">
+      <input type="checkbox" id="idMBLicense" data-field="idMBLicense">
+      <label for="idMBLicense">MB Driver's License with Photo - licence number (section 4d on licence):</label>
+    </div>
+    <div class="field-group grow">
+      <input type="text" id="mbLicenseNumber" class="underline-input" data-field="mbLicenseNumber">
+    </div>
+  </div>
+
+  <div class="form-footer">
+    <span>Criminal Risk Assessment Request&nbsp;&nbsp;&nbsp;Revision date: 2025-01-10</span>
+    <span>1</span>
+  </div>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page" id="page2">
+
+  <div class="form-header">
+    <div class="logo-block">
+      <img src="assets/logo-official.png" alt="Manitoba Families logo">
+    </div>
+    <div class="form-title">Criminal Risk Assessment<br>Request</div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="nameConfirm">NAME OF PERSON BEING ASSESSED:</label>
+      <input type="text" id="nameConfirm" class="underline-input" data-field="nameConfirm">
+    </div>
+  </div>
+  <div class="match-note">*Must match information on page 1</div>
+
+  <div class="important-note">IT IS IMPORTANT THAT THE CFS AGENCY DESIGNATE READS AND UNDERSTANDS THE FOLLOWING:</div>
+  <div class="body-text">
+    The identifying information supplied on page 1 will be researched through the Canadian Police Information Centre (CPIC) and
+    Winnipeg Police Service Records Management System (NICHE). The research will NOT include a vulnerable sector search or
+    information in respect of pardons, which information may impact the results of a risk assessment. Criminal Convictions are
+    <b>strictly confidential</b> and cannot be shared without written authorization of the person involved. Personal Information is
+    governed under <i>Section 8 of the Privacy Act (Federal Statute).</i> <u>PLEASE NOTE</u> that record information is based on <u>NAME AND
+    DATE OF BIRTH SEARCH ONLY</u> and does not necessarily indicate subject involvement. Verification can only be provided through
+    the submission of fingerprints to the local law enforcement agency for the area in which the person being assessed resides. <b>In
+    the case of dispute regarding the identity of the person being assessed, that person is advised</b> to attend any RCMP Detachment;
+    Winnipeg Police Service, 245 Smith Street, Winnipeg, Manitoba; Brandon Police Service, 1340 10th Street, Brandon, Manitoba; or
+    local Police Agency. A fee for service is required.
+  </div>
+
+  <div class="required-note">NOTE &ndash; SECTIONS MARKED WITH AN ASTERISK (*) ARE REQUIRED</div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="agencyName">*NAME OF AGENCY SUBMITTING REQUEST:</label>
+      <input type="text" id="agencyName" class="underline-input" data-field="agencyName">
+    </div>
+  </div>
+
+  <div class="reason-block">
+    <div class="field-row">
+      <label>*REASON FOR RISK ASSESSMENT:</label>
+    </div>
+    <div class="reason-options">
+      <div class="checkbox-row">
+        <span>With or Without Consent:</span>
+        <input type="checkbox" id="reasonChildProtection" data-field="reasonChildProtection">
+        <label for="reasonChildProtection">Child Protection Concerns</label>
+      </div>
+    </div>
+    <div class="reason-options">
+      <span>Must have consent:</span>
+      <div class="checkbox-row">
+        <input type="checkbox" id="reasonPlaceOfSafety" data-field="reasonPlaceOfSafety">
+        <label for="reasonPlaceOfSafety">Place of Safety</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="reasonKinship" data-field="reasonKinship">
+        <label for="reasonKinship">Kinship or Customary Care Agreement</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="assignedWorker">*ASSIGNED WORKER:</label>
+      <input type="text" id="assignedWorker" class="underline-input" data-field="assignedWorker">
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="lastAssessmentDate">DATE OF LAST CRIMINAL RISK ASSESSMENT (if known):</label>
+      <input type="date" id="lastAssessmentDate" class="underline-input" data-field="lastAssessmentDate">
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="submittingDesignate">*SUBMITTING DESIGNATE:</label>
+      <input type="text" id="submittingDesignate" class="underline-input" data-field="submittingDesignate">
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group">
+      <label for="designatePhone">*DESIGNATE PH#:</label>
+      <input type="text" id="designatePhone" class="underline-input" data-field="designatePhone">
+    </div>
+    <div class="field-group">
+      <label for="designateEmail">*DESIGNATE EMAIL#:</label>
+      <input type="email" id="designateEmail" class="underline-input" data-field="designateEmail">
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="designateFax">DESIGNATE FAX#</label>
+      <input type="text" id="designateFax" class="underline-input" data-field="designateFax">
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field-group grow">
+      <label for="requestDate">*REQUEST DATE:</label>
+      <input type="date" id="requestDate" class="underline-input" data-field="requestDate">
+    </div>
+  </div>
+
+  <div class="disclaimer-note">
+    NOTE: The assessment completed by the Criminal Risk Assessment Unit of the Department of Families Child Protection
+    Branch does not replace a criminal records check.
+  </div>
+
+  <div class="form-footer">
+    <span>Criminal Risk Assessment Request&nbsp;&nbsp;&nbsp;Revision date: 2025-01-10</span>
+    <span>2</span>
+  </div>
+</div>
+<div class="controls-bar">
+  <button id="submitBtn" type="button">Submit</button>
+  <button id="printBtn" type="button">Print</button>
+  <button id="resetBtn" type="button">Reset</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

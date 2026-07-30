@@ -1,0 +1,260 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Criminal Risk Assessment Request
+    link(rel="stylesheet" href="../css/style.css")
+  body
+
+    .controls-bar
+      button#submitBtn(type="button") Submit
+      button#printBtn(type="button") Print
+      button#resetBtn(type="button") Reset
+    #statusMsg
+
+    //- ================= PAGE 1 =================
+    .page#page1
+
+      .form-header
+        .logo-block
+          img(src="../assets/logo-official.png" alt="Manitoba Families logo")
+        .form-title Criminal Risk Assessment
+          br
+          | Request
+
+      .unit-block
+        | MANITOBA FAMILIES - CRIMINAL RISK ASSESSMENT UNIT
+        br
+        | Child Protection Branch
+        br
+        | 201 - 114 Garry Street
+        br
+        | Winnipeg, Manitoba R3C 4V5
+
+      .consent-box
+        .consent-title CONSENT FOR CRIMINAL RISK ASSESSMENT AND RELEASE OF INFORMATION
+        .consent-text.
+          As a person who has, or may have, care, custody, control or charge of a child in receipt of services under
+          <i>The Child and Family Services Act,</i> I authorize the Criminal Risk Assessment Unit of Manitoba Families&rsquo;
+          Child Protection Branch ("CRAU") to conduct enquiries of the Winnipeg Police Service (WPS), the RCMP and other
+          law enforcement agencies necessary to assess the risk that I may endanger the life, health or emotional
+          wellbeing of a child. I understand that this information is requested by (CFS Agency) for the purposes of,
+          and in accordance with, s. 18.4(1.1) of <i>The Child and Family Services Act,</i> and may include a criminal
+          record, criminal and Provincial Act convictions, orders or charges, other involvement/contact with law
+          enforcement (including non-conviction information) or other information. I authorize the disclosure of said
+          information to CRAU and an authorized Child and Family Services Agency designate or designates. I also
+          authorize the disclosure of the personal identifying information set out below to CRAU, the WPS, RCMP and
+          other law enforcement agencies for the purpose of completing a Criminal Risk Assessment. I understand that
+          the results of this Criminal Risk Assessment are confidential, and may not be provided to me, but may be
+          disclosed in accordance with s.76 of the <i>Child and Family Services Act.</i>
+
+        .field-row
+          .field-group
+            label(for="consentDate") Date:
+            input.underline-input(type="date" id="consentDate" data-field="consentDate")
+          .field-group.grow
+            label(for="signature") Signature of person being assessed:
+            input.underline-input(type="text" id="signature" data-field="signature")
+
+        .field-row
+          .checkbox-row
+            input(type="checkbox" id="unconsented" data-field="unconsented")
+            label(for="unconsented") Unconsented
+          .field-group.grow
+            label(for="witness") Witness (if consenting):
+            input.underline-input(type="text" id="witness" data-field="witness")
+
+      .print-clearly PLEASE PRINT CLEARLY
+
+      .numbered-fields
+        .field-row
+          .field-group
+            label(for="firstName") 1. FIRST NAME:
+            input.underline-input(type="text" id="firstName" data-field="firstName")
+          .field-group
+            label(for="secondName") 2. SECOND NAME:
+            input.underline-input(type="text" id="secondName" data-field="secondName")
+
+        .field-row
+          .field-group.grow
+            label(for="lastName") 3. LAST NAME:
+            input.underline-input(type="text" id="lastName" data-field="lastName")
+
+        .field-row
+          .field-group.grow
+            label 4. DATE OF BIRTH:
+            .dob-row
+              .dob-part
+                input(type="text" maxlength="2" id="dobDay" data-field="dobDay")
+                span Day
+              .dob-part
+                input(type="text" maxlength="2" id="dobMonth" data-field="dobMonth")
+                span Month
+              .dob-part
+                input(type="text" maxlength="4" id="dobYear" data-field="dobYear")
+                span Year
+          .field-group
+            label 5.
+            .checkbox-row
+              input(type="radio" name="gender" id="genderMale" value="Male" data-field="gender")
+              label(for="genderMale") MALE
+            .checkbox-row
+              input(type="radio" name="gender" id="genderFemale" value="Female" data-field="gender")
+              label(for="genderFemale") FEMALE
+
+        .field-row
+          .field-group.grow
+            label(for="otherLastNames") 6. OTHER LAST NAMES USED:
+            input.underline-input(type="text" id="otherLastNames" data-field="otherLastNames")
+
+        .field-row
+          .field-group.grow
+            label(for="otherFirstNames") 7. OTHER FIRST NAMES USED/ALSO GOES BY:
+            input.underline-input(type="text" id="otherFirstNames" data-field="otherFirstNames")
+
+        .field-row
+          .field-group.grow
+            label(for="currentAddress") 8. CURRENT ADDRESS (include postal code):
+            input.underline-input(type="text" id="currentAddress" data-field="currentAddress")
+
+        .field-row
+          .field-group.grow
+            label(for="currentPhone") 9. CURRENT PH#s:
+            input.underline-input(type="text" id="currentPhone" data-field="currentPhone")
+
+        .field-row
+          .field-group.grow
+            label(for="birthPlace") 10. City/Province or Country of Birth:
+            input.underline-input(type="text" id="birthPlace" data-field="birthPlace")
+
+      .id-notice *PLEASE NOTE: Subject's name must be identified with TWO PIECES OF IDENTIFICATION (MB D/L &amp; photo ID is preferable):
+
+      .id-checklist
+        .checkbox-row
+          input(type="checkbox" id="idBirthCert" data-field="idBirthCert")
+          label(for="idBirthCert") Birth Certificate
+        .checkbox-row
+          input(type="checkbox" id="idSIN" data-field="idSIN")
+          label(for="idSIN") Social Insurance Card
+        .checkbox-row
+          input(type="checkbox" id="idHealthCard" data-field="idHealthCard")
+          label(for="idHealthCard") Manitoba Health Card
+        .checkbox-row
+          input(type="checkbox" id="idTreatyCard" data-field="idTreatyCard")
+          label(for="idTreatyCard") Treaty Card
+
+      .field-row
+        .checkbox-row
+          input(type="checkbox" id="idOtherCheck" data-field="idOtherCheck")
+          label(for="idOtherCheck") Other (specify ID):
+        .field-group.grow
+          input.underline-input(type="text" id="idOtherSpecify" data-field="idOtherSpecify")
+
+      .field-row
+        .checkbox-row
+          input(type="checkbox" id="idMBLicense" data-field="idMBLicense")
+          label(for="idMBLicense") MB Driver's License with Photo - licence number (section 4d on licence):
+        .field-group.grow
+          input.underline-input(type="text" id="mbLicenseNumber" data-field="mbLicenseNumber")
+
+      .form-footer
+        span Criminal Risk Assessment Request&nbsp;&nbsp;&nbsp;Revision date: 2025-01-10
+        span 1
+
+    //- ================= PAGE 2 =================
+    .page#page2
+
+      .form-header
+        .logo-block
+          img(src="../assets/logo-official.png" alt="Manitoba Families logo")
+        .form-title Criminal Risk Assessment
+          br
+          | Request
+
+      .field-row
+        .field-group.grow
+          label(for="nameConfirm") NAME OF PERSON BEING ASSESSED:
+          input.underline-input(type="text" id="nameConfirm" data-field="nameConfirm")
+      .match-note *Must match information on page 1
+
+      .important-note IT IS IMPORTANT THAT THE CFS AGENCY DESIGNATE READS AND UNDERSTANDS THE FOLLOWING:
+      .body-text.
+        The identifying information supplied on page 1 will be researched through the Canadian Police Information
+        Centre (CPIC) and Winnipeg Police Service Records Management System (NICHE). The research will NOT include a
+        vulnerable sector search or information in respect of pardons, which information may impact the results of a
+        risk assessment. Criminal Convictions are <b>strictly confidential</b> and cannot be shared without written
+        authorization of the person involved. Personal Information is governed under <i>Section 8 of the Privacy Act
+        (Federal Statute).</i> <u>PLEASE NOTE</u> that record information is based on <u>NAME AND DATE OF BIRTH SEARCH
+        ONLY</u> and does not necessarily indicate subject involvement. Verification can only be provided through the
+        submission of fingerprints to the local law enforcement agency for the area in which the person being assessed
+        resides. <b>In the case of dispute regarding the identity of the person being assessed, that person is
+        advised</b> to attend any RCMP Detachment; Winnipeg Police Service, 245 Smith Street, Winnipeg, Manitoba;
+        Brandon Police Service, 1340 10th Street, Brandon, Manitoba; or local Police Agency. A fee for service is
+        required.
+
+      .required-note NOTE &ndash; SECTIONS MARKED WITH AN ASTERISK (*) ARE REQUIRED
+
+      .field-row
+        .field-group.grow
+          label(for="agencyName") *NAME OF AGENCY SUBMITTING REQUEST:
+          input.underline-input(type="text" id="agencyName" data-field="agencyName")
+
+      .reason-block
+        .field-row
+          label *REASON FOR RISK ASSESSMENT:
+        .reason-options
+          span With or Without Consent:
+          .checkbox-row
+            input(type="checkbox" id="reasonChildProtection" data-field="reasonChildProtection")
+            label(for="reasonChildProtection") Child Protection Concerns
+        .reason-options
+          span Must have consent:
+          .checkbox-row
+            input(type="checkbox" id="reasonPlaceOfSafety" data-field="reasonPlaceOfSafety")
+            label(for="reasonPlaceOfSafety") Place of Safety
+          .checkbox-row
+            input(type="checkbox" id="reasonKinship" data-field="reasonKinship")
+            label(for="reasonKinship") Kinship or Customary Care Agreement
+
+      .field-row
+        .field-group.grow
+          label(for="assignedWorker") *ASSIGNED WORKER:
+          input.underline-input(type="text" id="assignedWorker" data-field="assignedWorker")
+
+      .field-row
+        .field-group.grow
+          label(for="lastAssessmentDate") DATE OF LAST CRIMINAL RISK ASSESSMENT (if known):
+          input.underline-input(type="date" id="lastAssessmentDate" data-field="lastAssessmentDate")
+
+      .field-row
+        .field-group.grow
+          label(for="submittingDesignate") *SUBMITTING DESIGNATE:
+          input.underline-input(type="text" id="submittingDesignate" data-field="submittingDesignate")
+
+      .field-row
+        .field-group
+          label(for="designatePhone") *DESIGNATE PH#:
+          input.underline-input(type="text" id="designatePhone" data-field="designatePhone")
+        .field-group
+          label(for="designateEmail") *DESIGNATE EMAIL#:
+          input.underline-input(type="email" id="designateEmail" data-field="designateEmail")
+
+      .field-row
+        .field-group.grow
+          label(for="designateFax") DESIGNATE FAX#
+          input.underline-input(type="text" id="designateFax" data-field="designateFax")
+
+      .field-row
+        .field-group.grow
+          label(for="requestDate") *REQUEST DATE:
+          input.underline-input(type="date" id="requestDate" data-field="requestDate")
+
+      .disclaimer-note.
+        NOTE: The assessment completed by the Criminal Risk Assessment Unit of the Department of Families Child
+        Protection Branch does not replace a criminal records check.
+
+      .form-footer
+        span Criminal Risk Assessment Request&nbsp;&nbsp;&nbsp;Revision date: 2025-01-10
+        span 2
+
+    script(src="../js/script.js")

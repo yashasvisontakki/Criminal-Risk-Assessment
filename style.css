@@ -1,0 +1,338 @@
+/* ============================================================
+   Criminal Risk Assessment Request - Stylesheet
+   Replicates the Manitoba Families PDF form layout
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e9e9e9;
+  margin: 0;
+  padding: 20px 0;
+  color: #111;
+  font-size: 13px;
+}
+
+.page {
+  background: #ffffff;
+  width: 850px;
+  max-width: 95%;
+  margin: 0 auto 30px auto;
+  padding: 30px 40px 20px 40px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+/* ---------- Header ---------- */
+.form-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 3px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.logo-block img {
+  height: 55px;
+  width: auto;
+}
+
+.form-title {
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* ---------- Unit address block ---------- */
+.unit-block {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* ---------- Consent box ---------- */
+.consent-box {
+  border: 2px solid #000;
+  padding: 14px 16px;
+}
+
+.consent-title {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.consent-text {
+  text-align: justify;
+  font-size: 12.5px;
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+
+.consent-text i {
+  font-style: italic;
+}
+
+/* ---------- Field rows ---------- */
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.field-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.field-group label {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 12.5px;
+}
+
+.field-group.grow {
+  flex: 2;
+}
+
+.underline-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  flex: 1;
+  padding: 2px 4px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  min-width: 60px;
+}
+
+.underline-input:focus {
+  outline: none;
+  background: #fffbe0;
+}
+
+/* ---------- Checkbox row ---------- */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 15px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 15px;
+  margin: 8px 0;
+}
+
+/* ---------- Numbered fields section ---------- */
+.numbered-fields {
+  margin-top: 18px;
+}
+
+.numbered-fields .field-row {
+  border-bottom: none;
+}
+
+/* ---------- Print only note ---------- */
+.print-clearly {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 16px 0 10px 0;
+  font-size: 13px;
+}
+
+/* ---------- DOB row (day/month/year) ---------- */
+.dob-row {
+  display: flex;
+  gap: 10px;
+  flex: 2;
+}
+
+.dob-part {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dob-part input {
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  padding: 2px 4px;
+  font-size: 13px;
+}
+
+.dob-part span {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+/* ---------- ID notice ---------- */
+.id-notice {
+  background: #f4c9dd;
+  padding: 6px 10px;
+  font-weight: bold;
+  margin: 14px 0 8px 0;
+  font-size: 12.5px;
+}
+
+.id-checklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  margin-bottom: 8px;
+}
+
+/* ---------- Footer ---------- */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 11px;
+  border-top: 1px solid #999;
+  padding-top: 6px;
+}
+
+/* ---------- Page 2 specific ---------- */
+.match-note {
+  font-size: 11px;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.important-note {
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 16px 0 6px 0;
+}
+
+.body-text {
+  text-align: justify;
+  font-size: 12.5px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.required-note {
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.reason-block {
+  margin-bottom: 10px;
+}
+
+.reason-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  margin-top: 6px;
+  margin-left: 20px;
+}
+
+.disclaimer-note {
+  font-weight: bold;
+  margin-top: 24px;
+  font-size: 12.5px;
+}
+
+/* ---------- Controls (not printed) ---------- */
+.controls-bar {
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.controls-bar button {
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+#submitBtn {
+  background: #4C7C2E;
+  color: #fff;
+}
+
+#submitBtn:hover {
+  background: #3d6224;
+}
+
+#printBtn {
+  background: #2b5faa;
+  color: #fff;
+}
+
+#printBtn:hover {
+  background: #204a86;
+}
+
+#resetBtn {
+  background: #999;
+  color: #fff;
+}
+
+#resetBtn:hover {
+  background: #777;
+}
+
+#statusMsg {
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  font-weight: bold;
+  color: #205c20;
+  min-height: 18px;
+}
+
+/* ---------- Print styles ---------- */
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+  .controls-bar,
+  #statusMsg {
+    display: none !important;
+  }
+  .page {
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+    page-break-after: always;
+  }
+  .underline-input {
+    background: transparent !important;
+  }
+}
