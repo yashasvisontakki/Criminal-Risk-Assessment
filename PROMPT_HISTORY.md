@@ -48,7 +48,7 @@ template, keeping the variable names exactly as defined [in the XLSForm] so the 
   consent" warning only appears for Place of Safety / Kinship reasons)
 
 Test-rendered with `pug.renderFile()` against sample submission data — rendered without template
-errors (see `preview.html` for the sample output).
+errors (see `index.html` for the sample output).
 
 ## Notes on corrections made to the source PDF
 - The PDF's sex/gender row is misprinted as "MALE ☐ MALE ☐" (a source typo — the second option is
