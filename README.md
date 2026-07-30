@@ -1,26 +1,121 @@
-# Criminal Risk Assessment Request – Web Form
+# ⚖️ Criminal Risk Assessment Request – Web Form
 
-## Project Overview
+<p align="center">
 
-This project is a web-based implementation of the **Criminal Risk Assessment Request** form. The objective was to recreate the original PDF form as a responsive and printable web application while preserving the structure and appearance of the original document.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Pug](https://img.shields.io/badge/Pug-A86454?style=for-the-badge&logo=pug&logoColor=white)
 
-The project is developed using **HTML, CSS, JavaScript, and Pug**. The application runs entirely in the browser without requiring any backend or server setup.
+</p>
 
----
-
-## Features
-
-* Responsive web form based on the original PDF
-* Dynamic data binding using JavaScript
-* Client-side validation for required fields
-* Print-friendly layout matching the original document
-* Reset functionality to clear all entered data
-* Modular Pug template for easier maintenance
-* Clean and organized project structure
+<p align="center">
+A responsive web implementation of the <b>Criminal Risk Assessment Request</b> form recreated from the original PDF with an identical layout, responsive design, print support, and client-side validation.
+</p>
 
 ---
 
-## Project Structure
+# 📑 Table of Contents
+
+- Overview
+- Live Demo
+- Screenshots
+- Features
+- Technologies Used
+- Project Structure
+- How to Run
+- Functionalities
+- Data Handling
+- Learning Outcomes
+- Future Improvements
+- Author
+
+---
+
+# 📖 Overview
+
+The **Criminal Risk Assessment Request** project is a browser-based implementation of an official PDF document.
+
+The objective of this project was to recreate the complete document as an interactive web application while preserving the appearance, formatting, spacing, and workflow of the original PDF.
+
+The project is built entirely using front-end technologies and does not require any backend or server.
+
+---
+
+# 🚀 Live Demo
+
+### 🌐 Demo Link
+
+> **Add your deployed project link here**
+
+```
+https://your-demo-link.com
+```
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+> Replace this image with your screenshot.
+
+```
+assets/screenshots/home.png
+```
+
+<img src="assets/screenshots/home.png" width="900"/>
+
+---
+
+## Filled Form
+
+<img src="assets/screenshots/filled-form.png" width="900"/>
+
+---
+
+## Print Preview
+
+<img src="assets/screenshots/print-preview.png" width="900"/>
+
+---
+
+# ✨ Features
+
+✅ Responsive Layout
+
+✅ Pixel-perfect recreation of the original PDF
+
+✅ Dynamic JavaScript Data Binding
+
+✅ Client-side Validation
+
+✅ Print-friendly Layout
+
+✅ Reset Functionality
+
+✅ Clean UI
+
+✅ Modular Pug Template
+
+✅ Organized Folder Structure
+
+✅ Pure Front-End Project
+
+---
+
+# 🛠 Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| HTML5 | Structure |
+| CSS3 | Styling |
+| JavaScript | Form Logic |
+| Pug | Template Engine |
+
+---
+
+# 📂 Project Structure
 
 ```
 Criminal-Risk-Assessment/
@@ -35,7 +130,11 @@ Criminal-Risk-Assessment/
 │   └── script.js
 │
 ├── assets/
-│   └── logo.svg
+│   ├── logo.svg
+│   └── screenshots/
+│       ├── home.png
+│       ├── filled-form.png
+│       └── print-preview.png
 │
 └── pug/
     └── index.pug
@@ -43,90 +142,137 @@ Criminal-Risk-Assessment/
 
 ---
 
-## Technologies Used
+# ⚙️ How to Run
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-* Pug Template Engine
+## Step 1
 
----
+Download or clone the repository.
 
-## Project Files
-
-### index.html
-
-Main webpage containing the complete Criminal Risk Assessment Request form.
-
-### css/style.css
-
-Contains all styling for the form, layout, typography, spacing, and print formatting.
-
-### js/script.js
-
-Handles:
-
-* Form data binding
-* Validation
-* Submit functionality
-* Reset functionality
-* Print functionality
-
-### assets/logo.svg
-
-Contains the logo displayed in the form header.
-
-### pug/index.pug
-
-Pug version of the web form used to maintain a clean and reusable template structure.
+```bash
+git clone https://github.com/yourusername/Criminal-Risk-Assessment.git
+```
 
 ---
 
-## How to Run
+## Step 2
 
-1. Download or clone the project.
-2. Open the project folder.
-3. Double-click **index.html** or open it in any modern web browser.
-
-No additional setup or server configuration is required.
+Open the project folder.
 
 ---
 
-## Form Functionalities
+## Step 3
 
-### Submit
+Launch
 
-Validates all required fields and collects the entered information.
+```
+index.html
+```
 
-### Reset
+using any modern browser.
 
-Clears all input fields and restores the form to its initial state.
+No installation.
 
-### Print
+No dependencies.
 
-Prints the completed form in a layout similar to the original PDF.
-
----
-
-## Data Handling
-
-The form data is managed using a JavaScript object. Changes made in the user interface are reflected in the object, and updates to the object are reflected in the form fields, enabling two-way data synchronization.
+No server required.
 
 ---
 
-## Learning Outcomes
+# 📝 Form Functionalities
 
-Through this project, I learned:
+## ✔ Submit
 
-* Designing web forms based on official PDF documents
-* Creating reusable templates using Pug
-* Implementing client-side validation
-* Managing form data with JavaScript
-* Designing print-friendly web pages
-* Organizing a front-end project with a clean folder structure
+- Validates mandatory fields
+- Collects entered information
+- Displays validation errors if required fields are missing
 
 ---
 
-## Author
+## 🔄 Reset
 
-**Yashasvi Sontakki**
+- Clears all fields
+- Restores default values
+- Resets validation messages
+
+---
+
+## 🖨 Print
+
+- Generates a printer-friendly version
+- Maintains formatting similar to the original PDF
+- Optimized for A4 paper
+
+---
+
+# 🔄 Data Handling
+
+The application maintains all form values using a JavaScript object.
+
+Whenever the user updates an input field:
+
+```
+User Input
+      │
+      ▼
+JavaScript Object
+      │
+      ▼
+Updated Form
+```
+
+This provides smooth two-way synchronization between the UI and the application's data model.
+
+---
+
+# 🎯 Learning Outcomes
+
+This project helped in understanding:
+
+- Designing web forms from official PDF documents
+- Creating reusable templates using Pug
+- Building responsive layouts
+- Client-side form validation
+- JavaScript data binding
+- Print-specific CSS
+- Front-end project organization
+- Clean code structure
+
+---
+
+# 🚀 Future Improvements
+
+- PDF Export
+- Dark Mode
+- Auto Save
+- Backend Integration
+- Database Storage
+- Digital Signature Support
+- Multi-page Form Navigation
+
+---
+
+# 👨‍💻 Author
+
+## **Yashasvi Sontakki**
+
+📧 Email : your-email@example.com
+
+🌐 Portfolio : https://your-portfolio.com
+
+💼 LinkedIn : https://linkedin.com/in/your-profile
+
+🐙 GitHub : https://github.com/yourusername
+
+---
+
+# ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
+
+---
+
+<p align="center">
+
+Made with ❤️ using HTML, CSS, JavaScript & Pug
+
+</p>
