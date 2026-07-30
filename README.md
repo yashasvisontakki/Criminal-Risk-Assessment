@@ -30,7 +30,7 @@ The project is built entirely using front-end technologies and does not require 
 
 ### 🌐 Demo Link
 
-> **Add your deployed project link here**
+> **Criminal-risk-management**
 
 ```
 https://your-demo-link.com
@@ -115,10 +115,6 @@ Criminal-Risk-Assessment/
 │
 ├── assets/
 │   ├── logo.svg
-│   └── screenshots/
-│       ├── home.png
-│       ├── filled-form.png
-│       └── print-preview.png
 │
 └── pug/
     └── index.pug
@@ -239,24 +235,9 @@ This project helped in understanding:
 
 ## **Yashasvi Sontakki**
 
-📧 Email : your-email@example.com
+📧 Email : yashasvisontakki@gmail.com
 
-🌐 Portfolio : https://your-portfolio.com
+💼 LinkedIn : https://linkedin.com/in/yashasvi-sontakki
 
-💼 LinkedIn : https://linkedin.com/in/your-profile
+🐙 GitHub : https://github.com/yashasvisontakki
 
-🐙 GitHub : https://github.com/yourusername
-
----
-
-# ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
-
----
-
-<p align="center">
-
-Made with ❤️ using HTML, CSS, JavaScript & Pug
-
-</p>
